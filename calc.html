@@ -1,15 +1,13 @@
 <html>
   <head>
-    <title>Test Calc</title>
 
-    <script language="javascript" type="text/javascript">
-      var plus, minus, divide, multiply;
 
       function initialize() {
         plus = document.calc.operator.options[0];
         minus = document.calc.operator.options[1];
         divide = document.calc.operator.options[2];
         multiply = document.calc.operator.options[3];
+
       }
 
       function calculate() {
@@ -19,6 +17,7 @@
         if (minus.selected) document.calc.answer.value = a - b;
         if (divide.selected) document.calc.answer.value = a / b;
         if (multiply.selected) document.calc.answer.value = a * b;
+
       }
     </script>
   </head>
@@ -38,12 +37,13 @@
         <option value="minus">-</option>
         <option value="divide">/</option>
         <option value="multiply">*</option>
+
       </select>
 
       <input type="text" name="val2" size="10" />
       =
       <input type="text" name="answer" size="10" />
-      <input type="button" value="answer" onClick="calculate()" />
+
     </form>
 
     <br /><br />
