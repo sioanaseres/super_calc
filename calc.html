@@ -1,19 +1,13 @@
 <html>
   <head>
-    <title>SioanaSeres's Calc</title>
 
-    <script language="javascript" type="text/javascript">
-      var plus, minus, divide, multiply, max, pow, min, avg;
 
       function initialize() {
         plus = document.calc.operator.options[0];
         minus = document.calc.operator.options[1];
         divide = document.calc.operator.options[2];
         multiply = document.calc.operator.options[3];
-        max = document.calc.operator.options[4];
-        pow = document.calc.operator.options[5];
-        min = document.calc.operator.options[6];
-        avg = document.calc.operator.options[7];
+
       }
 
       function calculate() {
@@ -23,10 +17,7 @@
         if (minus.selected) document.calc.answer.value = a - b;
         if (divide.selected) document.calc.answer.value = a / b;
         if (multiply.selected) document.calc.answer.value = a * b;
-        if (max.selected) document.calc.answer.value = Math.max(a, b);
-        if (pow.selected) document.calc.answer.value = Math.pow(a, b);
-        if (min.selected) document.calc.answer.value = Math.min(a, b);
-        if (avg.selected) document.calc.answer.value = (a + b) / 2;
+
       }
     </script>
   </head>
@@ -46,16 +37,13 @@
         <option value="minus">-</option>
         <option value="divide">/</option>
         <option value="multiply">*</option>
-        <option value="max">max</option>
-        <option value="pow">**</option>
-        <option value="min">min</option>
-        <option value="avg">avg</option>
+
       </select>
 
       <input type="text" name="val2" size="10" />
       =
       <input type="text" name="answer" size="10" />
-      <input type="button" value="show answer" onClick="calculate()" />
+
     </form>
 
     <br /><br />
